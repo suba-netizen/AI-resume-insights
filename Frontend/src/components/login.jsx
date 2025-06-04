@@ -94,7 +94,7 @@ export default function Login({ setToken, onNavigateToSignup }) { // Added onNav
           {onNavigateToSignup && ( // Conditionally render signup link
             <p className={styles.signupLink}>
               Don't have an account?{' '}
-              <a href="#" onClick={(e) => { e.preventDefault(); onNavigateToSignup(); }}>
+              <a href="/register" onClick={(e) => { e.preventDefault(); onNavigateToSignup(); }}>
                 Sign Up
               </a>
             </p>
